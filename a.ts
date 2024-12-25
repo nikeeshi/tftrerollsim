@@ -116,6 +116,7 @@ export class ProbMatrix {
   }
 }
 
+// 1回リロールしたときに駒数がどう遷移するかのMatrixを計算
 export function calcProbMatrixToGetWantedUnitByOneReroll(
   rate: number,
   numOfHitsInBag: number,
@@ -136,6 +137,7 @@ export function calcProbMatrixToGetWantedUnitByOneReroll(
   return ret;
 }
 
+// 配列のi要素目 rerollCount回リロールしたときにi個獲得できる確率
 export function calcProbsToGetWantedUnitByKRerolls(
   rate: number,
   numOfHitsInBag: number,
